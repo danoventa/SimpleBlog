@@ -13,7 +13,11 @@ namespace SimpleBlog
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Home", "", new { controller = "Pages", action = "Index" });
+            routes.MapRoute("Login", "login", new { controller = "Auth", action = "Login" });
+            
+            routes.MapRoute("Home", "", new { controller = "Posts", action = "Index" });
+
+
 
             // hit f6 to compile, when ISS is running. 
             /* routes.MapRoute(
