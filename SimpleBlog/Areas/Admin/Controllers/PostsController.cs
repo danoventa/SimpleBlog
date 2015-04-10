@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-
-namespace SimpleBlog.Controllers
+namespace SimpleBlog.Areas.Admin.Controllers
 {
-    public class PostsController : Controller  // This was supposed to be subclassed into the Controller... That's why content did not work. 
+    public class PostsController : Controller
     {
-        // controller has actions we can map to. 
+        // GET: Admin/Posts
         public ActionResult Index()
         {
-            return Content("Hello, World!");
+            return Content("Something something sometning.");
         }
     }
 }

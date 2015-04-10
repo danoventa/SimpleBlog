@@ -4,14 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace SimpleBlog.Controllers
+namespace SimpleBlog.Areas.Admin.Controllers
 {
     public class UsersController : Controller
     {
-        // GET: Users
+        // GET: Admin/Users
         public ActionResult Index()
         {
-            return Content("Users!");
+            return Content("You are a user!");
         }
     }
 }

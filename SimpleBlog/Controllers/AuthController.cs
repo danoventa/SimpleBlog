@@ -8,14 +8,10 @@ namespace SimpleBlog.Controllers
 {
     public class AuthController : Controller
     {
+        // GET: Auth
         public ActionResult Login()
         {
-            return Content("Login!");
+            return Content("You are now logging in? Or logged in... not sure. just go with it! YOLO!");
         }
-        // GET: Auth
-        /*public ActionResult Index()
-        {
-            return View();
-        }*/
     }
 }
