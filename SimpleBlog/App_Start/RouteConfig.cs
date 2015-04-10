@@ -22,7 +22,7 @@ namespace SimpleBlog
 
 
 
-            // hit f6 to compile, when ISS is running.  
+            // hit shift control b to compile, when ISS is running.  
             /* routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
