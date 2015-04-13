@@ -1,7 +1,42 @@
-﻿@{
+﻿@model SimpleBlog.ViewModels.AuthLogin
+
+@{
     ViewBag.Title = "Login";
 }
 
+@* 
+<p>
+        The value of test in our model, is: @Model.Test
+    </p>
+*@
+
+@* This is the new version with strongly typed variables in the form. *@
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    
+    <div>
+        @Html.LabelFor(x => x.Username)
+        @Html.EditorFor(x => x.Username)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+}
+
+
+@*  
+    // This code was the naive version. 
+    <form method="POST">
+        <input type="text" name="Username" />
+        <input type="text" name="Password" />
+        <input type="submit" value="Login" />
+    </form>
+*@
 
 <body>
     <p> This is the login view. </p>
