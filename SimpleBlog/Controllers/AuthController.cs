@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using SimpleBlog.ViewModels;
+
 
 namespace SimpleBlog.Controllers
 {
@@ -24,12 +26,14 @@ namespace SimpleBlog.Controllers
             if (!ModelState.IsValid)
                 return View(form);
 
-            if (form.Username != "rainbow dash")
+            FormsAuthentication.SetAuthCookie(form.Username, true);
+
+           /* if (form.Username != "rainbow dash")
             {
                 ModelState.AddModelError("Username", "UserName or Password isn't correct.");
                 return View(form);
             }
-
+            */
             // form.Test = "This is a value set in my post action";
             return Content("The form is valid");
         }
