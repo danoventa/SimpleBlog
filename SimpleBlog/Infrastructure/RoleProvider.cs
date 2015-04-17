@@ -11,7 +11,7 @@ namespace SimpleBlog.Infrastructure
         {
             if (username == "nelson")
                 return new[] { "admin" };
-
+             
             return new string[] { };
         }
         public override void AddUsersToRoles(string[] usernames, string[] roleNames)
