@@ -30,3 +30,7 @@ c:\Users\Executor\Documents\Visual Studio 2013\Projects\SimpleBlog\SimpleBlog\ob
 c:\Users\Executor\Documents\Visual Studio 2013\Projects\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.csprojResolveAssemblyReference.cache
 c:\Users\Executor\Documents\Visual Studio 2013\Projects\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.dll
 c:\Users\Executor\Documents\Visual Studio 2013\Projects\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.pdb
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.SqlServer.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.xml
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.SqlServer.xml
