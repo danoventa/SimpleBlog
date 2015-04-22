@@ -14,5 +14,12 @@ namespace SimpleBlog.Infrastructure
         {
             _selectedTab = selectedTab;
         }
+
+        public override void OnResultExecuting(ResultExecutingContext filterContext)
+        {
+            filterContext.Controller.ViewBag.SelectedTab = _selectedTab;
+        }
+
+
     }
 }

@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using SimpleBlog.Infrastructure;
 
-namespace SimpleBlog.Areas.Admin.Controllers
+namespace SimpleBlog.Controllers
 {
-    [Authorize(Roles = "admin")]
-    [SelectedTab("users")]
     public class UsersController : Controller
     {
-        // GET: Admin/Users
+        // GET: Users
         public ActionResult Index()
         {
             return View();

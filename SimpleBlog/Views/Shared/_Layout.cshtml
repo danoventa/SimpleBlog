@@ -25,7 +25,7 @@
             <a href="Url.RouteUrl("logout")">Logout</a>
             if (User.IsInRole("admin"))
             {
-                <a href="!@Url.Action("index", "Posts", new{area="admin"})">View posts in admin</a>   
+                <a href="@Url.Action("index", "Posts", new{area="admin"})">View posts in admin</a>   
             }
         }
         else
