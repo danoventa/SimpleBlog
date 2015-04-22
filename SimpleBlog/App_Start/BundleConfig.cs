@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Optimization;
 
 
 namespace SimpleBlog.App_Start
 {
     public class BundleConfig
     {
-        public static void RegisterBundles(/* BundleCollection bundles */)
+        public static void RegisterBundles(BundleCollection bundles)
         {
-            // will need a sibstitute for Microsoft.Web.Optimization since they aren't showing on the Nuget
+            bundles.Add(new StyleBundle("~/admin/styles").Include("~/content/styles/bootstrap.css").Include("/content/styles/admin.css"));
+
+            bundles.Add(new StyleBundle("~/styels").Include("~/content/styles/bootstrap.css").Include("~/content/styles/site.css"));
         }
     }
 }
