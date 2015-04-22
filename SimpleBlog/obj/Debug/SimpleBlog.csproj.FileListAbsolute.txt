@@ -34,3 +34,8 @@ C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bi
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.SqlServer.dll
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.xml
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\EntityFramework.SqlServer.xml
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\Antlr3.Runtime.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\System.Web.Optimization.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\WebGrease.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\Antlr3.Runtime.pdb
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\System.Web.Optimization.xml
