@@ -12,7 +12,7 @@ namespace SimpleBlog.Areas.Admin.Controllers
         // GET: Admin/Users
         public ActionResult Index()
         {
-            return Content("You are a user!");
+            return View();
         }
     }
 }
