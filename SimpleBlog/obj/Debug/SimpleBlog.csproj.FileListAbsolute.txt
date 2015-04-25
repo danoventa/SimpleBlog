@@ -42,3 +42,4 @@ C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bi
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\FluentMigrator.dll
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\FluentMigrator.pdb
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\FluentMigrator.xml
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\MySql.Data.dll
