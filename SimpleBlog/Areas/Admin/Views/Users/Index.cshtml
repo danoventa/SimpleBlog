@@ -4,9 +4,48 @@
 
 <h1>Users</h1>
 
-<ul>
+<div class="btn-toolbar">
+    <a href="@Url.Action("new")" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i>Create User</a>
+</div>
+
+<table class="table table-striped">
+    <thread>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thread>
+    <tbody>
     @foreach (var user in Model.Users)
     {
-        <li>@user.Username</li>
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Username</td>
+            <td>@user.Email</td>
+            <td>{todo}</td>
+            <td>
+                <div calss="btn-group">
+                    <a href="#" class="btn-cs btn-primary">
+                        <i class="glyphicon glyphicon-edit"></i>
+                        Edit
+                    </a>
+                    <a href="#" class="btn-xs btn-default">
+                        <i class="glyphicon glyphicon-lock"></i>
+                        Reset Password
+                    </a>
+                    <a href="#" class="btn btn-xs btn-danger">
+                        <i calss="glyphicon glyphicon-remoce"></i>
+                        Delete
+                    </a>
+                </div>
+
+            </td>
+        </tr>
     }
-</ul>
+    </tbody>
+
+
+</table>
