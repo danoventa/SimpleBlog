@@ -28,11 +28,11 @@
             <td>{todo}</td>
             <td>
                 <div calss="btn-group">
-                    <a href="#" class="btn-cs btn-primary">
+                    <a href="@Url.Action("edit", new {user.Id})" class="btn-cs btn-primary">
                         <i class="glyphicon glyphicon-edit"></i>
                         Edit
                     </a>
-                    <a href="#" class="btn-xs btn-default">
+                    <a href="@Url.Action("resetpassword", new{user.Id}))" class="btn-xs btn-default">
                         <i class="glyphicon glyphicon-lock"></i>
                         Reset Password
                     </a>
