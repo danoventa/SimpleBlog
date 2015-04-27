@@ -28,15 +28,15 @@
             <td>{todo}</td>
             <td>
                 <div calss="btn-group">
-                    <a href="@Url.Action("edit", new {user.Id})" class="btn-cs btn-primary">
+                    <a href="@Url.Action("edit", new {user.Id})" class="btn btn-cs btn-primary">
                         <i class="glyphicon glyphicon-edit"></i>
                         Edit
                     </a>
-                    <a href="@Url.Action("resetpassword", new{user.Id}))" class="btn-xs btn-default">
+                    <a href="@Url.Action("resetpassword", new{user.Id})" class="btn btn-xs btn-default" data-post>
                         <i class="glyphicon glyphicon-lock"></i>
                         Reset Password
                     </a>
-                    <a href="#" class="btn btn-xs btn-danger">
+                <a href="@Url.Action("delete", new{user.Id})" class="btn btn-xs btn-danger" data-post="Are you sure you want to delete @user.Username?">
                         <i calss="glyphicon glyphicon-remoce"></i>
                         Delete
                     </a>

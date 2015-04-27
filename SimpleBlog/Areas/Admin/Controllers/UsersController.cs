@@ -116,5 +116,16 @@ namespace SimpleBlog.Areas.Admin.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            var user = Database.Session.Load<User>(id);
+            if (user == null)
+                return HttpNotFound();
+
+            Database.Session.Delete(User);
+            return RedirectToAction("index");
+        }
     }
 }

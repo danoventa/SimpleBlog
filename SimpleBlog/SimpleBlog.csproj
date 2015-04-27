@@ -170,6 +170,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Areas\Admin\Scripts\Forms.js" />
     <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Styles\Admin.css" />
     <Content Include="Content\Styles\bootstrap.css" />
