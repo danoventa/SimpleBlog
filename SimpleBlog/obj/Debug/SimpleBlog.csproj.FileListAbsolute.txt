@@ -47,3 +47,6 @@ C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bi
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\NHibernate.dll
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\Iesi.Collections.xml
 C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\NHibernate.xml
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\BCrypt.Net.dll
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\BCrypt.Net.pdb
+C:\Users\Executor\documents\visual studio 2013\Projects\SimpleBlog\SimpleBlog\bin\BCrypt.Net.xml
