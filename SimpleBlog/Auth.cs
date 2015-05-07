@@ -11,7 +11,7 @@ namespace SimpleBlog
     {
         private const string UserKey = "SimpleBlog.Auth.UserKey";
 
-        private static User User
+        public static User User
         {
             get
             {
