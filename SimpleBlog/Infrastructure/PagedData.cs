@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SimpleBlog.Infrastructure
 {
-    public class PageData<T> : IEnumerable<T>
+    public class PagedData<T> : IEnumerable<T>
     {
         private readonly IEnumerable<T> _currentItems; 
         public int TotalCount { get; private set; }
@@ -36,11 +36,11 @@ namespace SimpleBlog.Infrastructure
                 {
                     throw new InvalidOperationException();
                 }
-                return Page + 1;
+                return Page - 1;
             }
         }
 
-        public PageData(IEnumerable<T> currentItems, int totalCount, int page, int perPage)
+        public PagedData(IEnumerable<T> currentItems, int totalCount, int page, int perPage)
         {
             _currentItems = currentItems;
 
@@ -48,9 +48,9 @@ namespace SimpleBlog.Infrastructure
             Page = page;
             PerPage = perPage;
 
-            TotalCount = (int) Math.Ceiling((float) TotalCount/PerPage);
+            TotalPages = (int) Math.Ceiling((float) TotalCount/PerPage);
             HasNextPage = Page < TotalPages;
-            HasPreviousPage = Page > TotalPages;
+            HasPreviousPage = Page > 1;
         }
 
         public IEnumerator<T> GetEnumerator()

@@ -12,21 +12,10 @@ namespace SimpleBlog.Controllers
 {
     public class PostsController : Controller
     {
-        private const int PostsPerPage = 5;
-        public ActionResult Index(int page = 1)
+        
+        public ActionResult Index()
         {
-            var totalPostCount = Database.Session.Query<Post>().Count();
-
-            var currentPostPage = Database.Session.Query<Post>()
-                .OrderByDescending(c => c.CreatedAt)
-                .Skip((page - 1)*PostsPerPage)
-                .Take(PostsPerPage)
-                .ToList();
-
-            return View(new PostsIndex
-            {
-                Posts = new PageData<Post>(currentPostPage, totalPostCount, page, PostsPerPage)
-            });
+          return View();
         }
     }
 }

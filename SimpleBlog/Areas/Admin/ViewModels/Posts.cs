@@ -9,6 +9,6 @@ namespace SimpleBlog.Areas.Admin.ViewModels
 {
     public class PostsIndex
     {
-        public PageData<Post> Posts { get; set; }
+        public PagedData<Post> Posts { get; set; }
     }
 }
