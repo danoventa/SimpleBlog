@@ -23,9 +23,8 @@ namespace SimpleBlog.Infrastructure
                 if (!HasNextPage)
                 {
                     throw new InvalidOperationException();
-
-                    return Page + 1;
                 }
+                return Page + 1;
             }
         }
 
@@ -36,9 +35,8 @@ namespace SimpleBlog.Infrastructure
                 if (!HasPreviousPage)
                 {
                     throw new InvalidOperationException();
-
-                    return Page - 1;
                 }
+                return Page + 1;
             }
         }
 
@@ -62,7 +60,7 @@ namespace SimpleBlog.Infrastructure
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return GetEnumerator();
         }
     }
 }

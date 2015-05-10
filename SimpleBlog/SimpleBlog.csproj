@@ -153,6 +153,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Admin\ViewModels\Posts.cs" />
     <Compile Include="Areas\Admin\ViewModels\Users.cs" />
     <Compile Include="Auth.cs" />
     <Compile Include="Controllers\AuthController.cs" />

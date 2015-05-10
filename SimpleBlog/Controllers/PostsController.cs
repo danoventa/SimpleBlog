@@ -3,13 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NHibernate.Linq;
+using SimpleBlog.Areas.Admin.ViewModels;
+using SimpleBlog.Infrastructure;
+using SimpleBlog.Models;
 
 namespace SimpleBlog.Controllers
 {
     public class PostsController : Controller
     {
-        public ActionResult Index(){
-            return View();
+        private const int PostsPerPage = 5;
+        public ActionResult Index(int page = 1)
+        {
+            var totalPostCount = Database.Session.Query<Post>().Count();
+
+            var currentPostPage = Database.Session.Query<Post>()
+                .OrderByDescending(c => c.CreatedAt)
+                .Skip((page - 1)*PostsPerPage)
+                .Take(PostsPerPage)
+                .ToList();
+
+            return View(new PostsIndex
+            {
+                Posts = new PageData<Post>(currentPostPage, totalPostCount, page, PostsPerPage)
+            });
         }
     }
 }
