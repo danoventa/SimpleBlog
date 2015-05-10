@@ -33,5 +33,13 @@ namespace SimpleBlog.Areas.Admin.Controllers
                 Posts = new PagedData<Post>(currentPostPage, totalPostCount, page, PostsPerPage)
             });
         }
+
+        public ActionResult New()
+        {
+            return View("Form", new PostsForm
+            {
+                IsNew = true
+            });
+        }
     }
 }
