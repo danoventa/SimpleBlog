@@ -16,6 +16,7 @@ namespace SimpleBlog.Controllers
         public ActionResult Index()
         {
           return View();
+            
         }
     }
 }
